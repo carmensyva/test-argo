@@ -11,4 +11,4 @@ spec:
     name: guestbook-ui
   tls: null
   port:
-    targetPort: 8080
+    targetPort: 80
