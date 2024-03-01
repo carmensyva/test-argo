@@ -1,0 +1,14 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: guestbook
+  namespace: project-test
+  labels:
+    app.kubernetes.io/instance: guestbook
+spec:
+  to:
+    kind: Service
+    name: guestbook-ui
+  tls: null
+  port:
+    targetPort: 8080
